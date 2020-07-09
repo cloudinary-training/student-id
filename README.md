@@ -29,8 +29,10 @@ Use the Cloud Name for the cloud you created in step 1 for **cn**.  Add a URL en
 5. We are adding a version with current epoch time to bust the cache so that we can pick up new images with the **student-id** tag without running into caching problems.  
 You can also accomplish cache busting with a setting in your cloud.  You need to get support to help with that and it shouldn't be necessary. Cloudinary admin cloud setting for list sync: 
 ![list setting](./images/list-setting.jpg)
+6. In order to use the list API which gathers up images by tag (**student-id**), you need to uncheck the list resources in settings | security.
+![Resource List](./images/uncheck-list-resources.jpg)
 
-Example:
+## Example:
 To use the following specifications for collecting data:
 - cloud name: `student-id-test`
 - course title: Student ID Test
