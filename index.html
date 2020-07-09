@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>upload widget</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="banner" class="banner top full">
+      <p>
+        This web page is to be used for instructional purposes. The data entered
+        is stored as meta data with your image on the course's Cloudinary
+        account. We ask that you don't share the link to this site publicly. You
+        can remove your data from this page by supplying the first name and last
+        name associated with your picture. This will open your email app and it
+        will be forwarded to training for deletion.
+      </p>
+      <p>
+        To delete your image and data from this page, provide first name and
+        last name used to create Student id:
+        <input type="text" id="delete-fname" placeholder="First Name" />
+        <input type="text" id="delete-lname" placeholder="Last name" />
+        <button type="button" id="delete-btn">Delete</button>
+      </p>
+      <a class="close-msg" href="#">OK</a>
+    </div>
+
+    <h1>
+      Student ID: <span id="course-title">Fundamentals For Developers</span>
+      <span id="course-date">August 2020</span>
+    </h1>
+    <h2>Create a Badge</h2>
+    <form class="form-inline">
+      <label for="fname">First name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        value=""
+        size="12"
+        maxlength="11"
+        placeholder="First name"
+      /><br />
+      <label for="lname">Last name:</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        value=""
+        size="12"
+        maxlength="11"
+        placeholder="Last name"
+      /><br />
+
+      <label for="title">Title:</label><br />
+      <input
+        type="text"
+        id="title"
+        name="title"
+        value=""
+        size="12"
+        maxlength="22"
+        placeholder="Title"
+      /><br />
+      <label for="org">Organization:</label><br />
+      <input
+        type="text"
+        id="org"
+        name="org"
+        value=""
+        size="12"
+        maxlength="22"
+        placeholder="Organization"
+      /><br />
+      <br />
+      <label for="bgcolor">Background color:</label><br />
+      <!-- <input type="text" id="fcolor" name="fcolor" value="" size="12" maxlength="22" placeholder="Favorite color"><br> -->
+      <div class="color-container">
+        <input type="radio" name="bgcolor" id="y1" value="F2D865" />
+        <label class="color" for="y1"><span class="y1"></span></label>
+
+        <input type="radio" name="bgcolor" id="y2" value="F4B21B" />
+        <label class="color" for="y2"><span class="y2"></span></label>
+
+        <input type="radio" name="bgcolor" id="y3" value="DB8226" />
+        <label class="color" for="y3"><span class="y3"></span></label>
+
+        <input type="radio" name="bgcolor" id="b1" value="0071BA" />
+        <label class="color" for="b1"><span class="b1"></span></label>
+
+        <input type="radio" name="bgcolor" id="b2" value="0E2F5A" />
+        <label class="color" for="b2"><span class="b2"></span></label>
+
+        <input type="radio" name="bgcolor" id="b3" value="231F20" />
+        <label class="color" for="b3"><span class="b3"></span></label>
+      </div>
+      <button id="upload" type="button">Upload Image</button>
+    </form>
+
+    <div class="child-page-listing">
+      <h2>Badge Gallery</h2>
+
+      <div id="gallery" class="grid-container"></div>
+      <!-- end grid container -->
+    </div>
+
+    <div id="toast">
+      <div id="desc">A notification message.</div>
+    </div>
+
+    <script src="./js/lodash.min.js" type="text/javascript"></script>
+    <script src="./js/cloudinary-core.js" type="text/javascript"></script>
+    <script
+      src="https://widget.cloudinary.com/v2.0/global/all.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="./js/upload.js"></script>
+  </body>
+</html>

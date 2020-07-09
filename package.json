@@ -1,0 +1,26 @@
+{
+  "name": "student-id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-var-overlay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebeccapeltz/student-id.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebeccapeltz/student-id/issues"
+  },
+  "homepage": "https://github.com/rebeccapeltz/student-id#readme",
+  "dependencies": {
+    "cloudinary": "^1.22.0",
+    "cloudinary-core": "^2.8.2",
+    "dotenv": "^8.2.0",
+    "dotnet": "^1.1.4",
+    "open": "^7.0.4"
+  }
+}

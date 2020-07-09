@@ -1,0 +1,62 @@
+[
+  {
+    "public_id": "student-id/c708e8f5d222102a524bbf20550c57f2",
+    "version": 1592589428,
+    "format": "jpg",
+    "width": 345,
+    "height": 345,
+    "type": "upload",
+    "created_at": "2020-06-19T17:57:08Z",
+    "context": {
+      "custom": {
+        "fcolor": "yellow",
+        "fname": "Joy",
+        "lname": "Jensen",
+        "org": "Eat Out",
+        "title": "Lead SWE",
+        "uploadDate": "2020-06-19T17:56:57.133Z"
+      }
+    },
+    "tags": ["student-id"]
+  },
+  {
+    "id": "uw-file3",
+    "batchId": "uw-batch2",
+    "asset_id": "38758fb2b303a61eb6af37e1622ac3d7",
+    "public_id": "student-id/ac167e1abc8195345299ec153a521d1e",
+    "version": 1593016991,
+    "version_id": "02fce924bc534058bf4bacaa16510b62",
+    "signature": "fd27954696d7baa7f1b75f13bee8737f34e3391f",
+    "width": 345,
+    "height": 345,
+    "format": "jpg",
+    "resource_type": "image",
+    "created_at": "2020-06-24T16:43:11Z",
+    "tags": ["student-id"],
+    "pages": 1,
+    "bytes": 14757,
+    "type": "upload",
+    "etag": "73a35c4ad3b0aa6c4524b00161339d28",
+    "placeholder": false,
+    "url": "http://res.cloudinary.com/pictures77/image/upload/v1593016991/student-id/ac167e1abc8195345299ec153a521d1e.jpg",
+    "secure_url": "https://res.cloudinary.com/pictures77/image/upload/v1593016991/student-id/ac167e1abc8195345299ec153a521d1e.jpg",
+    "access_mode": "public",
+    "context": {
+      "custom": {
+        "fcolor": "aaa",
+        "fname": "aaa",
+        "lname": "aaa",
+        "org": "aaa",
+        "title": "aaa",
+        "uploadDate": "2020-06-24T16:43:03.456Z"
+      }
+    },
+    "existing": false,
+    "faces": [[124, 56, 99, 132]],
+    "coordinates": { "faces": [[124, 56, 99, 132]] },
+    "original_filename": "8afd74216aa9bc44c1de36dcc5ad6dca",
+    "delete_token": "513f895fa2c3f76e2b9a209cc96787be8f8c6717cc579be04d2f7ce061fd2fb2521a6fec50bcf8e0a5666ded14e190bf215ea2209841fe2cc007a37db877c29a1924f080f28ef1a01d167c9de71f3a8ac724ce4543b884ac7b32ac116281c6933baad4264c4b946ddf458c9320d491a882827bc38fee03669ec3f459f83d3a19d54be520288695fcf873acf27f5798cd9df5445f969b027e7b8d1a9b25241c2e04e5556723736912a8af66351e3b76a6",
+    "path": "v1593016991/student-id/ac167e1abc8195345299ec153a521d1e.jpg",
+    "thumbnail_url": "https://res.cloudinary.com/pictures77/image/upload/c_limit,h_60,w_90/v1593016991/student-id/ac167e1abc8195345299ec153a521d1e.jpg"
+  }
+]
