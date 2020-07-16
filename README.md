@@ -17,7 +17,7 @@ The steps to prepare for for using this app are:
 ```bash
 node create-student-id-preset.js
 ```
-3. Run the script `create-named-badge-xform.js`. This script will create the transformation that will overlay student supplied data: name, title, organization to the badge, as well as apply background and foreground color to the student information.
+3. Run the script `create-named-badge-xform-color.js`. This script will create the transformation that will overlay student supplied data: name, title, organization to the badge, as well as apply background and foreground color to the student information.
 ```bash
 node create-named-badge-xform-color.js
 ```
