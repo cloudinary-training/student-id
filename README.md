@@ -23,7 +23,7 @@ node create-named-badge-xform-color.js
 ```
 4. Supply a URL to students for a particular course like this: 
 ```bash
-https://path.to.app/index.html?cn=cloud_name&title=course%20title&date=course%data
+https://path.to.app/index.html?cn=cloud_name&title=course%20title&date=course%20date
 ```
 Use the Cloud Name for the cloud you created in step 1 for **cn**.  Add a URL encoded string for **title** and **date**.  The title and date should show up in your header.
 5. We are adding a version with current epoch time to bust the cache so that we can pick up new images with the **student-id** tag without running into caching problems.  
