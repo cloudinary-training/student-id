@@ -3,7 +3,6 @@ const CLOUD_NAME = PARAMS.has("cn") ? PARAMS.get("cn") : "pictures77";
 const COURSE_TITLE = PARAMS.has("title")? PARAMS.get("title"): "Cloudinary Training";
 const COURSE_DATE = PARAMS.has("date")? PARAMS.get("date"):"2020"
 const PRESET = "student-id";
-const BADGE_TRANSFORM = "t_v-badge";
 const NOT_ALLOW_DUPS = true;
 
 const cl = new cloudinary.Cloudinary({ cloud_name: CLOUD_NAME, secure: true });
@@ -49,11 +48,9 @@ function doubleEncode(str) {
 //add URL and fullname
 function createStudentData(student) {
   console.log("createStudentData");
-  // console.log("createStudentData:", JSON.stringify(student, null, 2));
   let contextMap = student && student.context ? student.context.custom : null;
   if (!contextMap) {
     //a student with no context - fix by creating dummy context - this should never happen
-    //TODO look for a better way 
     console.log("No context:", JSON.stringify(student, null, 2));
     // create dummy context values
     contextMap = {
@@ -113,9 +110,7 @@ function createGalleryEntry(student) {
   return article;
 }
 
-// add a list of students to the galler
-// set prepend to true to insert list at the beginning:
-// useful for right after upload
+// add a list of students to the gallery
 function populateGallery(list, prepend) {
   console.log("populateGallery");
   for (const student of list) {
@@ -187,12 +182,7 @@ function createContextMap() {
   if (document.querySelector("input[name=bgcolor]:checked")){
     bgcolor = document.querySelector("input[name=bgcolor]:checked").value;
   } 
-  // if (document.getElementById('r1').checked) {
-  //   rate_value = document.getElementById('r1').value;
-  // }
-  // const bgcolor = document.querySelector("input[type=radio]:checked").value;
-  // const bgcolor = idocument.querySelector("input[name=rate]:checked").value;
-  // console.log(fname, lname, title, org, bgcolor);
+
   // add context
   const contextMap = {};
   contextMap.fname = fname;
@@ -233,7 +223,6 @@ function setUploadButton(enable) {
 //require all input data before image upload enabled
 function inputChanged() {
   //turn on upload button after text entries
-  //choosing background not required
   console.log("inputChanged");
   if (
     document.querySelector("#fname").value.length > 0 &&
@@ -334,10 +323,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                   toast("Successful face upload.", "info");
                   clearForm();
                   //add image to gallery
-                  // XXXXXXXXXXdocument.querySelector("#gallery").innerHTML = "";
 
-                  //TODO TRY add to list add to DOM - otherwise need to call load
-                  // add student to list
                   studentList.push(result.info);
                   console.log(
                     "new student added:",
@@ -356,7 +342,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
               }
             } else {
               console.log("UW error event", error);
-              launch_toast(`Upload error: ${error}`, "warn");
+              toast(`Upload error: ${error}`, "warn");
             }
           }
         );
