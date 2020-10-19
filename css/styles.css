@@ -132,22 +132,22 @@ label.color span {
   transition: transform .2s ease-in-out;
 }
 label.color span.y1 {
-  background: #F2D865;
+  background: #FFD4C4;
 }
 label.color span.y2 {
-  background: #F4B21B;
+  background: #F7BC00;
 }
 label.color span.y3 {
-  background: #DB8226;
+  background: #FF5050;
 }
 label.color span.b1 {
-  background: #0071BA;
+  background: #B6D2FF;
 }
 label.color span.b2 {
-  background: #0E2F5A;
+  background: #3448C5;
 }
 label.color span.b3 {
-  background: #231F20;
+  background: #0C163B;
 }
 
 /* toast */
